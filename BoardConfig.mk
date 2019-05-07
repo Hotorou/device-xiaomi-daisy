@@ -14,6 +14,14 @@ DEVICE_PATH := device/xiaomi/daisy
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    system \
+    vendor
+
 # Filesystem
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 TARGET_USES_MKE2FS := true
