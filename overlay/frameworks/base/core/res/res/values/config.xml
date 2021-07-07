@@ -675,4 +675,18 @@
          Off by default, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPUs. -->
     <bool name="config_ui_enableFadingMarquee">true</bool>
+    
+    <!--The System Info feature requires the following overlays to be non-empty to be functional,
+    as some legacy devices do not have the necessary kernel sysfs to display particular sys info. -->
+    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
+    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+    <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
+    <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
+	
+    <!--Useful for improving signal reception -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
+	
+    <!-- enable smart pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
+
 </resources>
