@@ -40,3 +40,6 @@ persist.camera.profile                                        u:object_r:camera_
 # Accent Picker
 persist.sys.theme.accentcolor                                 u:object_r:theme_prop:s0
 persist.sys.theme.gradientcolor                               u:object_r:theme_prop:s0
+
+# Insmod
+vendor.all.devices.ready                                      u:object_r:vendor_device_prop:s0
