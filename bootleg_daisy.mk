@@ -27,11 +27,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+# Inherit some common BOOTLEGGERS stuff.
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Inherit some VendorExtra stuff
 $(call inherit-product-if-exists, vendor/custom/prebuilts/config.mk)
+
+# Maintainer
+PRODUCT_BUILD_PROP_OVERRIDES += \
+  ro.bootleggers.maintainer="Zunayed"
 
 # Use MiuiCamera
 WITH_MIUICAM := true
@@ -40,12 +44,9 @@ WITH_MIUICAM := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="ZunayedDihan"
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := aicp_daisy
+PRODUCT_NAME := bootleg_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite

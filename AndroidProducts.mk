@@ -15,9 +15,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_daisy.mk
+    $(LOCAL_DIR)/bootleg_daisy.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_daisy-user \
-    aicp_daisy-userdebug \
-    aicp_daisy-eng
+    bootleg_daisy-user \
+    bootleg_daisy-userdebug \
+    bootleg_daisy-eng
