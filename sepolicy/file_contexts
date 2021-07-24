@@ -31,7 +31,7 @@
 
 # Fpc Fingerprint
 /data/fpc(/.*)?					                                                           u:object_r:fpc_data_file:s0
-/dev/socket/fpce(/.*)?			                                                               	   u:object_r:fpce_socket:s0
+/dev/socket/fpce(/.*)?			                                                                   u:object_r:fpce_socket:s0
 /sys/devices(/platform)?/soc/soc:fpc1020(/.*)?		                                                   u:object_r:fpc_sysfs:s0
 
 # Goodix Fingerprint
@@ -80,7 +80,7 @@
 
 # Root folders
 /firmware(/.*)?                                                                                            u:object_r:firmware_file:s0
-/persist(/.*)?        											   u:object_r:mnt_vendor_file:s0
+/persist(/.*)?                                                                                             u:object_r:mnt_vendor_file:s0
 
 # USB HAL
-/(vendor|system/vendor)/bin/hw/android\.hardware\.usb\@1\.0-service\.sakura                                u:object_r:hal_usb_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb\@1\.0-service\.daisy                                u:object_r:hal_usb_default_exec:s0
