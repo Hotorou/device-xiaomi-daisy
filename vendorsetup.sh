@@ -7,3 +7,5 @@ git clone https://github.com/LineageOS/android_hardware_qcom_audio.git -b lineag
 git clone https://github.com/lupesoltec/vendor_MiuiCamera vendor/MiuiCamera
 
 rm-rf hardware/qcom-caf/bootctrl && git clone https://github.com/LineageOS/android_hardware_qcom_bootctrl.git hardware/qcom-caf/bootctrl
+
+rm -rf vendor/qcom/opensource/power && git clone https://github.com/AOSPA/android_vendor_qcom-opensource_power.git vendor/qcom/opensource/power
