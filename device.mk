@@ -23,7 +23,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/qcom/display \
+    hardware/qcom/media \
+    vendor/qcom/opensource/audio-hal/primary-hal
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -273,11 +276,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
 
-# HALS
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
-
 # Health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-qti \
@@ -330,10 +328,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.msm8953
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_PACKAGES += \
@@ -413,10 +407,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libjson
-
-# QTI Common
-TARGET_COMMON_QTI_COMPONENTS := \
-    bt
 
 # Ramdisk
 PRODUCT_PACKAGES += \

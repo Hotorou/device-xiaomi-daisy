@@ -27,16 +27,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common OctaviOS stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit from MiuiCamera
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
+# Inherit some common XD stuff.
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BOOT_DARK := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := octavi_daisy
+PRODUCT_NAME := xdroid_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
-
-TARGET_FACE_UNLOCK_SUPPORTED := true
