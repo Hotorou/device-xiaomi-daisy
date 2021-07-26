@@ -27,14 +27,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit from MiuiCamera
-$(call inherit-product, vendor/MiuiCamera/config.mk)
-
 # Inherit some common XD stuff.
 $(call inherit-product, vendor/xdroid/config/common.mk)
+
 XDROID_BOOT_DARK := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Inherit some VendorExtra stuff
+$(call inherit-product-if-exists, vendor/custom/prebuilts/config.mk)
+
+# Use MiuiCamera
+WITH_MIUICAM := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
