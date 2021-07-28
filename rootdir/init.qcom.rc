@@ -145,6 +145,10 @@ on boot
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/device/extldo
     chmod 0660 /sys/class/rfkill/rfkill0/device/extldo
 
+    # Allow system to read measured screen FPS
+    chown system graphics /sys/devices/virtual/graphics/fb0/measured_fps
+    chmod 0666 /sys/devices/virtual/graphics/fb0/measured_fps
+
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio
