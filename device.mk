@@ -167,10 +167,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service \
+    android.hardware.boot@1.0-impl.recovery \
     bootctrl.msm8953
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
 
 # Boot SPL
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
