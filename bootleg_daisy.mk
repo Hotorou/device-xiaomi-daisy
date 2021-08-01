@@ -33,10 +33,6 @@ $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 # Inherit some VendorExtra stuff
 $(call inherit-product-if-exists, vendor/custom/prebuilts/config.mk)
 
-# Maintainer
-PRODUCT_BUILD_PROP_OVERRIDES += \
-  ro.bootleggers.maintainer="Zunayed"
-
 # Use MiuiCamera
 WITH_MIUICAM := true
 
@@ -57,7 +53,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Fingerprint
 BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys
-BUILD_DESCRIPTION := redfin-user 11 RQ2A.210705.001 7380771 release-keys
+BUILD_DESCRIPTION := redfin-user 11 RQ3A.210705.001 7380771 release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
