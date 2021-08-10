@@ -236,10 +236,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
     
 # Framework detect
 PRODUCT_PACKAGES += \
