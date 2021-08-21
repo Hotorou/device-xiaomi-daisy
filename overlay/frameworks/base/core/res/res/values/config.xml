@@ -689,4 +689,8 @@
     <!-- enable smart pixels -->
     <bool name="config_enableSmartPixels">true</bool>
 
+    <!-- The maximum number of notification on the statusbar is currently limited,
+     you can tweak the number of icons using the two overlays -->
+    <integer name="config_maxVisibleNotificationIcons">5</integer>
+    <integer name="config_maxVisibleNotificationIconsOnLock">6</integer>
 </resources>
