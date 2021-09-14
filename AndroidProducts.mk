@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_daisy.mk
+    $(LOCAL_DIR)/dot_daisy.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_daisy-user \
-    derp_daisy-userdebug \
-    derp_daisy-eng
+    dot_daisy-user \
+    dot_daisy-userdebug \
+    dot_daisy-eng
