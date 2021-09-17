@@ -671,11 +671,6 @@
     <!-- True if the firmware supports Wi-Fi link probing -->
     <bool name="config_wifi_link_probing_supported">false</bool>
 
-    <!-- Enables or disables fading edges when marquee is enabled in TextView.
-         Off by default, since the framebuffer readback used to implement the
-         fading edges is prohibitively expensive on most GPUs. -->
-    <bool name="config_ui_enableFadingMarquee">true</bool>
-    
     <!--The System Info feature requires the following overlays to be non-empty to be functional,
     as some legacy devices do not have the necessary kernel sysfs to display particular sys info. -->
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
