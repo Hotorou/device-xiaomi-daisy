@@ -10,30 +10,35 @@
         "repository": "crdroidandroid/android_hardware_qcom_display",
         "target_path": "hardware/qcom-caf/msm8996-daisy/display",
         "branch": "11.0-caf-msm8996",
+        "clone-depth": "1",
         "remote": "github"
     },
     {
         "repository": "crdroidandroid/android_hardware_qcom_media",
         "target_path": "hardware/qcom-caf/msm8996-daisy/media",
         "branch": "11.0-caf-msm8996",
+        "clone-depth": "1",
         "remote": "github"
     },
     {
         "repository": "crdroidandroid/android_hardware_qcom_audio",
         "target_path": "hardware/qcom-caf/msm8996-daisy/audio",
         "branch": "11.0-caf-msm8996",
+        "clone-depth": "1",
         "remote": "github"
     },
     {
         "remote"  : "github", 
         "repository"  : "mvaisakh/gcc-arm64", 
-        "target_path"  : "prebuilts/gcc/linux-x86/aarch64/aarch64-elf", 
+        "target_path"  : "prebuilts/gcc/linux-x86/aarch64/aarch64-elf",
+        "clone-depth": "1",
         "branch"  : "gcc-master"
     },
     {
         "remote"  : "github", 
         "repository" : "geopd/Mystique_sakura",
         "target_path" : "kernel/xiaomi/msm8953",
+        "clone-depth": "1",
         "branch" : "4.9-R"
     },
 ]
