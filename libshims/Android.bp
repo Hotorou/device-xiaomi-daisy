@@ -6,7 +6,7 @@
 
 cc_library_shared {
     name: "libdpmframework_shim",
-    srcs: ["
+    srcs: [
         "strdup8to16.cpp",
         "strdup16to8.cpp",
     ],
